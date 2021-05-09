@@ -7,14 +7,14 @@ let fetishes = JSON.parse('[{"Lolicon":null},{"Lactation":null},{"Blond Hair":nu
 
 const colorTable = {
   1: 'black',
-  2: 'red',
-  3: 'tomato',
+  2: 'darkred',
+  3: 'red',
   4: 'tomato',
-  5: 'yellow',
+  5: 'gold',
   6: 'yellow',
   7: 'lightgreen',
-  8: 'lightgreen',
-  9: 'green',
+  8: 'green',
+  9: 'darkgreen',
   10: 'purple',
 };
 
