@@ -104,7 +104,16 @@ function loadJSON(file) {
 }
 
 function saveImage() {
+  const date = new Date().toISOString().substring(0, 19);
 
+  html2canvas(divMain).then((canvas) => {
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute('href', canvas.toDataURL('image/png'));
+    downloadAnchorNode.setAttribute('download', `FetishRank ${date}.png`);
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+  });
 }
 
 const buttonSaveJSON = document.getElementById('buttonSaveJSON');
